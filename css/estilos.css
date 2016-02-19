@@ -1,0 +1,36 @@
+*{
+    outline: solid red 1px
+}
+
+/* Estilos header */
+header{
+    padding: 10px;
+    text-align: center
+}
+
+
+/* Estilos nav */
+nav{
+    padding: 10px;
+    text-align: center;
+}
+
+/* Estilos article */
+
+/* Estilos img */
+img{
+    display: block;
+    margin: 25px auto;
+}
+
+/* Estilos aside */
+aside{
+    padding: 10px;
+    text-align: center
+}
+ 
+/* Estilos footer */
+footer{
+    padding: 10px;
+    text-align: center
+}

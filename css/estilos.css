@@ -1,6 +1,6 @@
-*{
+/**{
     outline: solid red 1px
-}
+}*/
 
 /* Estilos header */
 header{
@@ -13,6 +13,28 @@ header{
 nav{
     padding: 10px;
     text-align: center;
+    
+}
+
+ul{
+    background: #FFAAAA;
+    padding: 20px 0 20px 0;
+    
+}
+
+li{
+    background: #AAB8FF;
+    padding: 10px 30px 10px 30px;
+    display: inline;
+}
+
+a{
+    
+    text-decoration:none;
+}
+
+li:hover{
+    background-color: #AAFFB3;
 }
 
 /* Estilos article */

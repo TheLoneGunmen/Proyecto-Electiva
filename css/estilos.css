@@ -1,6 +1,7 @@
-/**{
-    outline: solid red 1px
-}*/
+*{
+    //outline: solid red 1px;
+    //margin: 0;
+}
 
 /* Estilos header */
 header{
@@ -11,30 +12,30 @@ header{
 
 /* Estilos nav */
 nav{
-    padding: 10px;
+    width: 100%;
+    margin: 0 auto;
     text-align: center;
-    
 }
 
-ul{
+nav ul{
     background: #FFAAAA;
-    padding: 20px 0 20px 0;
-    
+    list-style: none;
+    padding: 0;
 }
 
-li{
-    background: #AAB8FF;
-    padding: 10px 30px 10px 30px;
-    display: inline;
+nav ul li{
+    display: inline-block;
 }
 
-a{
-    
-    text-decoration:none;
+nav ul li a{
+    padding: 15px 20px;
+    display: inline-block;
+    text-decoration: none;
 }
 
-li:hover{
-    background-color: #AAFFB3;
+nav ul li a:hover{
+    background: #AAFFB3;
+    border-radius: 6px 6px 0 0;
 }
 
 /* Estilos article */
@@ -48,11 +49,11 @@ img{
 /* Estilos aside */
 aside{
     padding: 10px;
-    text-align: center
+    text-align: center;
 }
  
 /* Estilos footer */
 footer{
     padding: 10px;
-    text-align: center
+    text-align: center;
 }

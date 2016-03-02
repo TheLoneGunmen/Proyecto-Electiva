@@ -1,7 +1,6 @@
-*{
-    //outline: solid red 1px;
-    //margin: 0;
-}
+/**{
+    outline: solid red 1px;
+}*/
 
 /* Estilos header */
 header{
@@ -35,7 +34,6 @@ nav ul li a{
 
 nav ul li a:hover{
     background: #AAFFB3;
-    border-radius: 6px 6px 0 0;
 }
 
 /* Estilos article */

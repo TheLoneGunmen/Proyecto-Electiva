@@ -3,56 +3,103 @@
 <head>
     <title>SoloJuegos</title>
     <meta charset="UTF-8">
-    <link href="css/estilos.css" rel="stylesheet">
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <link rel="stylesheet" href="./fonts/fonts.css">
+    <link rel="stylesheet" href="./css/estilos-dist.css">
+    <link rel="stylesheet" href="./fonts/icomoon/style.css">
     <meta name="description" content="">
     <meta name="keywords" content="">
 </head>
 <body>
     <header>
-        <h1>SoloJuegos</h1>
-        <div>
+        <h1><a href="">Solo<span>Juegos<span></a></h1>
+        <div class="menu-header">
             <a href="#">Login</a>
             <a href="./sitemap.html">Mapa del sitio</a>
         </div>
     </header>
-    <nav>
-        <ul>
-            <li><a href="./index.html">Inicio</a></li>
-            <li><a href="./news.html">Noticias</a></li>
-            <li><a href="./consoles.html">Consolas</a></li>
-            <li><a href="./genders.html">Géneros</a></li>
-            <li><a href="./sagas.html">Sagas</a></li>
-            <li><a href="./about.html">Acerca de</a></li>
-        </ul>
-    </nav>
-    <!-- Inicio primer section -->
-    <article>
-        <h1>Ya está disponible la actualización gratuita de marzo de Star Wars: Battlefront</h1> 
-        <img src="img/sw.jpeg" alt=""/>
-        <p>     
-        Electronic Arts ha anunciado que la actualización gratuita de marzo ya está disponible en Star Wars: Battlefront.
-        Entre las novedades...<a href="./news.html">Leer mas</a>
-        </p>
+
+    <div class="contenedor">    
+        <nav>
+            <ul>
+                <li><a href="./index.html">Inicio</a></li>
+                <li><a href="./news.html">Noticias</a></li>
+                <li><a href="./consoles.html">Consolas</a></li>
+                <li><a href="./genders.html">Géneros</a></li>
+                <li><a href="./sagas.html">Sagas</a></li>
+                <li><a href="./about.html">Acerca de</a></li>
+            </ul>
+        </nav>
         
-        <h1>Microsoft cancela Fable Legends y negocia el cierre de Lionhead Studios</h1>
-        <img src="img/lionhead.jpg" alt=""/>
-        <p>  
-        Microsoft acaba de comunicar, a través de su web oficial, el futuro cierre de Lionhead Studios y la cancelación del desarrollo de Fable Legends...<a href="./news.html">Leer mas</a>
-        </p>
-        <article>
-        <h1>Problemas con los nuevos drivers de NVIDIA</h1>
-         <img src="img/nvi.jpg" alt=""/>
-        <p>
-           NVIDIA lanzó ayer noche una serie de nuevos drivers para sus tarjetas gráficas GeForce con el objetivo de mejorar el rendimiento de The Division y Need for Speed en PC,Sin embargo...<a href="./news.html">Leer mas</a>
-            </p>
-            <h1>Ediciones de Consolas solo para Nostalgicos</h1>
-        <img src="img/por.jpg" alt=""/>     
-        <p>Son bonitas. Son Valiosas. Son difíciles de encontrar. Son las más nostálgicas dentro de las consolas nostálgicas. Son las ediciones que nos gustaría tener en nuestras casas sin duda.<a href="./news.html">Leer mas</a></p>
-    </article>
-    <article>
-        
-    </article>-->
-    <aside>Publicidad no paga</aside>
-    <footer>Pie de pagina</footer>
+        <!--Slider-->
+        <section class="slider">
+    
+        </section>
+
+        <!--Envoltorio de las etiquetas section, aside y footer -->
+        <div class="contenido">
+
+        <!-- Inicio primer section -->
+        <section class="main">
+
+            <article class="article-entry">
+                <div class="image-preview">
+                    <img src="img/sw.jpeg" alt=""/>
+                </div>
+                    
+                <div class="content-preview">
+                <h2 class="article-tittle">Ya está disponible la actualización gratuita de marzo de Star Wars: Battlefront</h2> 
+                <p>Electronic Arts ha anunciado que la actualización gratuita de marzo ya está disponible en Star Wars: Battlefront.Entre las novedades...</p>
+                <div class="options">
+                    <div class="options-social">
+                        Compartir
+                        <a href=""><span class="icon-facebook2"></span></a>
+                        <a href=""><span class="icon-twitter"></span></a>
+                        <a href=""><span class="icon-google-plus2"></span></a>
+                    </div>
+                    <a class="read-more" href="./news.html">Leer más</a>
+                </div>
+                </div>
+            </article>
+            
+            <article class="article-entry">
+                <div class="image-preview">
+                    <img src="img/lionhead.jpg" alt=""/>
+                </div class="content-preview">
+                <div class="content-preview">
+                    <h2 class="article-tittle">Microsoft cancela Fable Legends y negocia el cierre de Lionhead Studios</h2>
+                    <p>Microsoft acaba de comunicar, a través de su web oficial, el futuro cierre de Lionhead Studios y la cancelación del desarrollo de Fable Legends...<a href="./news.html">Leer mas</a></p>
+                </div>
+            </article>
+
+            <article class="article-entry">
+                <div class="image-preview">
+                    <img src="img/nvi.jpg" alt=""/>
+                </div>
+                
+                <div class="content-preview">
+                    <h2 class="article-tittle">Problemas con los nuevos drivers de NVIDIA</h2>
+                    <p>NVIDIA lanzó ayer noche una serie de nuevos drivers para sus tarjetas gráficas GeForce con el objetivo de mejorar el rendimiento de The Division y Need for Speed en PC,Sin embargo...<a href="./news.html">Leer mas</a></p>
+                </div>
+            </article>
+
+            <article class="article-entry">
+                <div class="image-preview">
+                    <img src="img/por.jpg" alt=""/>  
+                </div>
+                <div class="content-preview">
+                    <h2 class="article-tittle">Ediciones de Consolas solo para Nostalgicos</h2>   
+                    <p>Son bonitas. Son Valiosas. Son difíciles de encontrar. Son las más nostálgicas dentro de las consolas nostálgicas. Son las ediciones que nos gustaría tener en nuestras casas sin duda.<a href="./news.html">Leer mas</a></p>
+                </div>
+            </article>
+        </section>
+        <!-- Finalizacion del envoltorio de los articles -->
+            <aside>
+                <div></div>
+                <div></div>
+            </aside>
+        </div>
+        <footer>Pie de pagina</footer>
+    </div>
 </body>
 </html>

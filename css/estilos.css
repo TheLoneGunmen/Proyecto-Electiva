@@ -54,22 +54,23 @@ header .menu-header a:first-child{
 
 
 
-/* Estilos envoltorio principal */
+/* Estilos envoltorio principal (Envuelve las etiquetas nav, section y aside) */
 .contenedor{
 	width: 90%;
+	max-width: 1000px;
 	margin: auto;
 	border: 1px solid #000;
+	border-top: none;
 }
 
 /* Estilos nav */
 nav{
 	background: #292828;
 	width: 100%;
+	//margin-top: 30px;
 }
 
 nav ul{
-	margin-top: 30px;
-
 	/* FlEXBOX */
 	display: flex;
 }
@@ -95,9 +96,46 @@ nav ul li a:hover{
 .slider{
 	width: 100%;
 	height: 300px;
-} 
+}
 
-/* Contenido principal (Envoltorio de las etiquetas section, aside y footer ) */
+
+/* CONSOLAS */
+.consoles{
+	padding: 10px;
+}
+.console{
+	padding: 10px;
+	border-right: 1px solid #E0E0E0;
+}
+.console:last-child{
+	border-right: none;
+}
+.consoles .interno{
+	display: flex;
+}
+
+.consoles .interno img{
+	width: 100px;
+	float: left;
+	margin-right: 15px;
+}
+
+.consoles .interno .texbox h3,p{
+	color: #000;
+}
+.consoles .interno .texbox h3{
+	margin-bottom: 5px;
+}
+.consoles .interno .texbox p:hover{
+	color: #5A5555;
+}
+.consoles .interno .texbox h3:hover{
+	color: #5A5555;
+}
+
+
+
+/* Contenido principal (Envoltorio de las etiquetas section y aside) */
 .contenido{
 	/* FlEXBOX */
 	display: flex;
@@ -112,6 +150,9 @@ nav ul li a:hover{
 	flex: 1 1 70%;
 }
 
+article img{
+	width: 50%;
+}
 /* Article */
 .article-entry{
 	margin-bottom: 20px;
@@ -123,6 +164,10 @@ nav ul li a:hover{
 	display: flex;
 }
 
+.main .article-entry:last-child{
+	border-bottom: none;
+}
+
 .image-preview{
 	background: tomato;
 	width: 50%;
@@ -130,6 +175,7 @@ nav ul li a:hover{
 	
 	/* FlEXBOX */
 	flex: 0 0 300px;
+	align-self: center;
 }
 
 .image-preview img{
@@ -143,21 +189,31 @@ nav ul li a:hover{
 }
 .article-tittle{
 	font-size: 1.5em;
-	//background: green;
 }
 .options .options-social{
 	display: inline;
 	line-height: 2;
 }
 
+/* Iconos compartir de los articulos */
 .options .options-social a{
-	color: steelblue;
+	color: #55ACEE;
+	font-size: 1.3em;
+}
+
+.options .options-social a:first-child{
+	color: #3b5998;
+}
+
+.options .options-social a:last-child{
+	color: #dd4b39;
 }
 
 .options .read-more{
 	background: #66cc33;
 	color: #fff;
 	padding: 10px;
+	border-radius: 3px;
 	float: right;
 }
 
@@ -175,6 +231,11 @@ aside div{
 	height: 150px;
 	margin: 10px;
 }
+
+
+
+
+
 
 
 

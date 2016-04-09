@@ -117,6 +117,7 @@ nav ul li a:hover{
 .consoles .interno img{
 	width: 100px;
 	float: left;
+	display: block;
 	margin-right: 15px;
 }
 
@@ -232,21 +233,70 @@ aside div{
 	margin: 10px;
 }
 
-
-
-
-
-
-
-
-
-
+/* estilos fooder */
+footer{
+	
+}
+/* Responsive design */
 @media screen and (max-width: 1000px){
 	.contenido{
 		flex-direction: column;
 	}
 }
 
+
+@media screen and (max-width: 720px){
+	.contenedor{
+		width: 100%;
+	}
+
+	.consoles .interno img{
+		float: none;
+		margin-right: 0;
+		margin: auto;
+	}
+
+	.consoles .interno .texbox{
+		text-align: center;
+	}
+
+}
+
+@media screen and (max-width: 600px){
+	.article-entry{
+		flex-direction: column;
+	}
+
+	.image-preview{
+		width: 100%;
+		flex: 0 0 100px;
+	}
+
+	.texbox{
+		text-align: center;
+	}
+
+	aside div{
+		display: none;
+	}
+}
+
+@media screen and (max-width: 400px){
+	.consoles .interno{
+		flex-direction: column;
+	}
+
+	.consoles .interno img{
+		float: left;
+		margin-right: 15px;
+	}
+
+	.console{
+		padding: 10px;
+		border-bottom: 1px solid #E0E0E0;
+		border-right: none;
+	}
+}
 
 
 

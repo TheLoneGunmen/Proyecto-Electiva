@@ -1,0 +1,47 @@
+<header>
+        <h1><a href="index.html?pag=home">SOLO<span>JUEGOS<span></a></h1>
+        <div id="menu-header" class="menu-header">
+            <a href="#">Login</a>
+            <a href="./index.html?pag=sitemap">Mapa del sitio</a>
+        </div>
+            <div id="main-nav" class="menu-bar">
+            <div class="uno"></div>
+            <div class="dos"></div>
+            <div class="tres"></div>
+        </div>
+ </header>
+
+<nav id="menu">
+    <ul id="menu-items"> 
+        <li><a href="./index.html?pag=home">Inicio</a></li>
+        <li><a href="./index.html?pag=news">Noticias</a></li>
+        <li><a href="./index.html?pag=consoles">Consolas</a></li>
+        <li><a href="./index.html?pag=genders">Géneros</a></li>
+       	<li><a href="./index.html?pag=sagas">Sagas</a></li>
+        <li><a href="./index.html?pag=about">Acerca de</a></li>
+    </ul>
+</nav>
+
+<script type="text/javascript">
+(function(){
+            var x = document.getElementById('main-nav');
+            var menu = document.getElementById('menu');
+            var contador = 0;
+
+            x.addEventListener('click', function () {
+            x.classList.toggle('mostrar');
+        
+            if(contador == 0){
+                contador = 1;
+                menu.classList.add('menu-show');
+                menu.classList.remove('menu-hide');
+        }else{
+            contador = 0;
+            menu.classList.add('menu-hide');
+            menu.classList.remove('menu-show');
+        }
+        });
+    }
+)();
+    
+</script>

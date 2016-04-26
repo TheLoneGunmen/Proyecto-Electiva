@@ -89,6 +89,7 @@ header .menu-bar{
 nav{
 	width: 100%;
 	background-color: #292828;
+	z-index: 1000;
 }
 
 nav ul{
@@ -334,9 +335,9 @@ footer{
 	nav{
 		position: fixed;
 		width: 80%;
-		height: 100%;
-		z-index: 3000;
+		height: calc(100% - 70px);
 		left: -100%;
+		overflow: scroll;
 	}
 	nav ul li{
 		border-bottom: 1px solid #fff;
@@ -344,12 +345,6 @@ footer{
 	nav ul li a{
 		padding-left: 15px;
 		text-align: left;
-	}
-}
-
-@media (orientation: landscape){
-	nav{
-		overflow: scroll;
 	}
 }
 @media screen and (max-width: 720px){

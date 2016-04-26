@@ -321,9 +321,8 @@ footer{
 	nav{
 		position: fixed;
 		width: 80%;
-		height: calc(100% - 70px);
+		height: 100%;
 		left: -100%;
-		overflow: scroll;
 	}
 	nav ul li{
 		border-bottom: 1px solid #fff;
@@ -342,6 +341,10 @@ footer{
 	}
 	header h1{
 		font-size: 25px;
+	}
+	nav{
+		overflow: scroll;
+		height: calc(100% - 70px);
 	}
 	.consoles .interno .texbox{
 		text-align: center;

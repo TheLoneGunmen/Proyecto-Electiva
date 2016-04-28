@@ -303,14 +303,26 @@ aside{
 }
 
 aside div{
-	background: #B3C613;
-	height: 150px;
+    background: black;
 	margin: 10px;
 }
 
+.imgaside{
+    display: block;
+    width: 100%
+}
 /* estilos fooder */
 footer{
-	
+    background: #292828;
+    color: #66cc33;
+    padding: 50px;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+}
+
+.footer-child{
+   width: 33,33%; 
 }
 /* Responsive design */
 @media screen and (max-width: 1000px){

@@ -110,6 +110,7 @@ nav ul li a{
 }
 
 nav ul li a:hover{
+    transition: 0.3s;
 	background-color: #3ead47;
 }
 .menu-show{
@@ -259,16 +260,24 @@ article img{
 .options .options-social a{
 	color: #55ACEE;
 	font-size: 1.3em;
+    display: inline-block
 }
 
 .options .options-social a:first-child{
 	color: #3b5998;
-}
+ }
 
 .options .options-social a:last-child{
 	color: #dd4b39;
+ }
+
+.options .options-social a:hover{
+    transition: 0.5s;
+	color: #5BB32E;
+    transform: scale(1.5)
 }
 
+/* Opción leer más */
 .options .read-more{
 	background: #66cc33;
 	color: #fff;
@@ -297,6 +306,7 @@ aside div{
     display: block;
     width: 100%
 }
+
 /* estilos fooder */
 footer{
     background: #292828;

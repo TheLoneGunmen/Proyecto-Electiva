@@ -314,8 +314,11 @@ aside{
 }
 
 aside div{
-    background: black;
 	margin: 10px;
+}
+
+iframe{
+    width: 100%;
 }
 
 .imgaside{

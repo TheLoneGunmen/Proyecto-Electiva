@@ -1,6 +1,6 @@
 $("#header").load('component/header.html');
 $("#footer").load("component/footer.html");
-$("#contenedor").load("module/home.html");
+//$("#contenedor").load("module/home.html");
 
 function getParameterByName(name, url) {
     if (!url) url = window.location.href;

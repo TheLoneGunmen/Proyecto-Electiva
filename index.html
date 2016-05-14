@@ -4,7 +4,7 @@
     <title>SoloJuegos</title>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
-    <link rel="shortcut icon" href="img/Favicon/favicon.png" type="image/png">
+    <link rel="shortcut icon" href="favicon.png" type="image/png">
     <link rel="stylesheet" href="./fonts/stylesheet.css">
     <link rel="stylesheet" href="./css/estilos-dist.css">
     <link href="https://file.myfontastic.com/HmCXBidXgfC6ew5dXdxtV5/icons.css" rel="stylesheet">
@@ -12,9 +12,238 @@
     <meta name="keywords" content="">
 </head>
 <body>
-    <div id="header"></div>
-    <div id="contenedor" class="contenedor"></div>
-    <div id="footer"></div>
+    <div id="header">
+      <header>
+              <h1><a class="tittle-style" href="index.html">SOLO<span>JUEGOS<span></a></h1>
+              <div id="menu-header" class="menu-header">
+                  <a href="./login.html">Login</a>
+                  <a href="./sitemap.html">Mapa del sitio</a>
+              </div>
+                  <div id="main-nav" class="menu-bar">
+                  <div class="uno"></div>
+                  <div class="dos"></div>
+                  <div class="tres"></div>
+              </div>
+       </header>
+
+      <nav id="menu">
+          <ul id="menu-items">
+              <li><a href="./index.html">Inicio</a></li>
+              <li><a href="./news.html">Noticias</a></li>
+              <li><a href="./consoles.html">Consolas</a></li>
+              <li><a href="./genders.html">Géneros</a></li>
+              <li><a href="./sagas.html">Sagas</a></li>
+              <li><a href="./about.html">Acerca de</a></li>
+          </ul>
+      </nav>
+    </div>
+    <div id="contenedor" class="contenedor">
+      <div class="vista-main">
+          <!--Slider-->
+          <section id="c-slider">
+            <div id="slider">
+              <section><img src="img/slider/slider1.jpg" alt=""></section>
+              <section><img src="img/slider/slider2.jpg" alt=""></section>
+              <section><img src="img/slider/slider3.jpg" alt=""></section>
+              <section><img src="img/slider/slider4.jpg" alt=""></section>
+            </div>
+            <div id="btn-prev">&#60;</div>
+            <div id="btn-next">&#62;</div>
+          </section>
+
+          <!-- Consolas -->
+          <div class="consoles">
+              <div class="interno">
+                  <div class="console sony">
+                      <img src="img/playstation.png" alt="" width="100">
+                      <div class="texbox">
+                          <a href="/consoles.html" class="clicked-c"><h3>PlayStation</h3></a>
+                          <a href="/consoles.html" class="clicked-c">
+                              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+                          </a>
+                      </div>
+                  </div>
+                  <div class="console xbox-c">
+                      <img src="img/xbox.png" alt="" width="100">
+                      <div class="texbox">
+                          <a href="/consoles.html" class="clicked-c"><h3>Xbox</h3></a>
+                          <a href="/consoles.html" class="clicked-c">
+                              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+                          </a>
+                      </div>
+                  </div>
+                  <div class="console nintendo-c">
+                      <img src="img/nintendo.png" alt="" width="100">
+                      <div class="texbox">
+                          <a href="/consoles.html" class="clicked-c"><h3>Nintendo</h3></a>
+                          <a href="/consoles.html" class="clicked-c">
+                              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+                          </a>
+                      </div>
+                  </div>
+              </div>
+          </div>
+      </div>
+
+      <!--Envoltorio de las etiquetas section y aside -->
+      <div class="contenido">
+
+          <!-- Inicio primer section -->
+          <section class="main">
+
+              <article class="article-entry">
+                  <div class="image-preview">
+                      <img src="img/news/starwars.jpeg" alt="" />
+                  </div>
+
+                  <div class="content-preview">
+                      <h2 class="article-tittle">Ya está disponible la actualización gratuita de marzo de Star Wars: Battlefront</h2>
+                      <p>Electronic Arts ha anunciado que la actualización gratuita de marzo ya está disponible en Star Wars: Battlefront.Entre las novedades...</p>
+                      <div class="options">
+                          <div class="options-social">
+                              Compartir
+                              <a href="https://www.facebook.com/" target="_blank"><span class="icon-facebook2"></span></a>
+                              <a href="https://twitter.com" target="_blank"><span class="icon-twitter"></span></a>
+                              <a href="https://plus.google.com" target="_blank"><span class="icon-google-plus2"></span></a>
+                          </div>
+                          <a class="btn read-more" href="./news.html#starwars">Leer más</a>
+                      </div>
+                  </div>
+              </article>
+
+              <article class="article-entry">
+                  <div class="image-preview">
+                      <img src="img/news/lionhead.jpg" alt="" />
+                  </div class="content-preview">
+                  <div class="content-preview">
+                      <h2 class="article-tittle">Microsoft cancela Fable Legends y negocia el cierre de Lionhead Studios</h2>
+                      <p>Microsoft acaba de comunicar, a través de su web oficial, el futuro cierre de Lionhead Studios y la cancelación del desarrollo de Fable Legends...</p>
+                      <div class="options">
+                          <div class="options-social">
+                              Compartir
+                              <a href="https://www.facebook.com/" target="_blank"><span class="icon-facebook2"></span></a>
+                              <a href="https://twitter.com" target="_blank"><span class="icon-twitter"></span></a>
+                              <a href="https://plus.google.com" target="_blank"><span class="icon-google-plus2"></span></a>
+                          </div>
+                          <a class="btn read-more" href="./news.html#fablelegends">Leer más</a>
+                      </div>
+                  </div>
+              </article>
+
+              <article class="article-entry">
+                  <div class="image-preview">
+                      <img src="img/news/nvidia.jpg" alt="" />
+                  </div>
+
+                  <div class="content-preview">
+                      <h2 class="article-tittle">Problemas con los nuevos drivers de NVIDIA</h2>
+                      <p>NVIDIA lanzó ayer noche una serie de nuevos drivers para sus tarjetas gráficas GeForce con el objetivo de mejorar el rendimiento de The Division y Need for Speed en PC,Sin embargo...</p>
+                      <div class="options">
+                          <div class="options-social">
+                              Compartir
+                              <a href="https://www.facebook.com/" target="_blank"><span class="icon-facebook2"></span></a>
+                              <a href="https://twitter.com" target="_blank"><span class="icon-twitter"></span></a>
+                              <a href="https://plus.google.com" target="_blank"><span class="icon-google-plus2"></span></a>
+                          </div>
+                          <a class="btn read-more" href="./news.html#nvidia">Leer más</a>
+                      </div>
+                  </div>
+              </article>
+
+              <article class="article-entry">
+                  <div class="image-preview">
+                      <img src="img/consoles/nostalgic.jpg" alt="" />
+                  </div>
+                  <div class="content-preview">
+                      <h2 class="article-tittle">Ediciones de consolas solo para nostálgicos</h2>
+                      <p>Son bonitas. Son Valiosas. Son difíciles de encontrar. Son las más nostálgicas dentro de las consolas nostálgicas. Son las ediciones que nos gustaría tener en nuestras casas sin duda.</p>
+                      <div class="options">
+                          <div class="options-social">
+                              Compartir
+                              <a href="https://www.facebook.com/" target="_blank"><span class="icon-facebook2"></span></a>
+                              <a href="https://twitter.com" target="_blank"><span class="icon-twitter"></span></a>
+                              <a href="https://plus.google.com" target="_blank"><span class="icon-google-plus2"></span></a>
+                          </div>
+                          <a class="btn read-more" href="./consoles.html#nostalgic">Leer más</a>
+                      </div>
+                  </div>
+              </article>
+          </section>
+          <!-- Finalizacion del envoltorio de los articles -->
+          <aside class="sidebar">
+              <div>
+                  <img src="img/Marcianito_1.gif" class="imgaside">
+              </div>
+              <div class="users-fans">
+                  <a href="#" class="users-fans-social social-facebook">
+                      <i class="icon-facebook"></i>Facebook
+                  </a>
+                  <a href="#" class="users-fans-social social-youtube">
+                      <i class="icon-youtube-play"></i>YouTube
+                  </a>
+                  <a href="#" class="users-fans-social social-googleplus">
+                      <i class="icon-google-plus"></i>Google+
+                  </a>
+                  <a href="#" class="users-fans-social social-twitter">
+                      <i class="icon-twitter"></i>Twitter
+                  </a>
+              </div>
+          </aside>
+      </div>
+    </div>
+
+    <div id="footer">
+      <footer>
+        <section class="final-last-footer">
+              <div class="footer-child social">
+                <h3 class="tittle-style">Solo<span>Juegos</span></h3>
+                <p>Aenean sodales eros ac scelerisque sagittis. Aliquam porta consectetur blandit. Nulla sed augue nisl. Vivamus pulvinar ullamc orper malesuada.</p>
+                <p>Suspendisse ornare velit eget dolor fringilla, et imperdiet ipsum convallis. Integer faucibus, felis nec lobortis hendrerit, augue mi mattis massa, vitae lobortis neque nunc ut eros. Donec massa lectus</p>
+              </div>
+              <div class="footer-child contacto">
+                <h3 class="footer-tittle-entry">ÚLTIMOS ARTÍCULOS</h3>
+                <section class="last-articles">
+                  <img class="last-image-preview" src="img/news/starwars.jpeg" alt="" />
+                  <a href="#">Ya está disponible la actualización gratuita de marzo de Star Wars: Battlefront</a>
+                </section class="last-articles">
+                <section class="last-articles">
+                  <img class="last-image-preview" src="img/news/lionhead.jpg" alt="" />
+                  <a href="#">Microsoft cancela Fable Legends y negocia el cierre de Lionhead Studios</a>
+                </section>
+                <section class="last-articles">
+                  <img class="last-image-preview" src="img/consoles/nostalgic.jpg" alt="" />
+                  <a href="#">Ediciones de consolas solo para nostálgicos</a>
+                </section>
+              </div>
+              <div class="footer-child gallery">
+                <h3 class="footer-tittle-entry">ÚLTIMAS IMÁGENES</h3>
+                <section class="last-images">
+                  <div class="gallery-row">
+                    <img src="img/zelda.jpg" alt="">
+                    <img src="/img/EURO.jpg" alt="">
+                    <img src="/img/sf.jpg" alt="">
+                  </div>
+                  <div class="gallery-row">
+                    <img src="/img/consoles/mg.jpg" alt="">
+                    <img src="/img/news/starwars.jpeg" alt="">
+                    <img src="/img/consoles/nostalgic.jpg" alt="">
+                  </div>
+                </section>
+              </div>
+        </section>
+        <div class="footer-legal">
+          <p>Copyright (c) 2016 Copyright SoloJuegos All Rights Reserved.</p>
+          <ul class="legal-social">
+            <li><a href="#"><i class="icon-facebook"></i></a></li>
+            <li><a href="#"><i class="icon-twitter"></i></a></li>
+            <li><a href="#"><i class="icon-google-plus"></i></a></li>
+            <li><a href="#"><i class="icon-youtube-play"></i></a></li>
+            <li><a href="https://github.com/TheLoneGunmen" target="_blank"><i class="icon-github"></i></a></li>
+          </ul>
+        </div>
+      </footer>
+
+    </div>
     <div class="social-bar">
       <ul>
         <li><a href="#" class="icon-facebook"></a></li>
@@ -26,6 +255,6 @@
       </ul>
     </div>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.2/jquery.min.js"></script>
-    <script type="text/javascript" src="js/main.js"></script>
+    <script src="/js/main.js"></script>
 </body>
 </html>

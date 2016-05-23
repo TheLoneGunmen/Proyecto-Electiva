@@ -9,106 +9,70 @@
     <link rel="stylesheet" href="./fonts/stylesheet.css">
     <link rel="stylesheet" href="./css/estilos-dist.css">
     <link rel="stylesheet" href="./css/fontastic.css">
+    <link rel="stylesheet" href="css/estilos.css">
+	<link rel="stylesheet" href="css/animate.css">
     <meta name="description" content="">
     <meta name="keywords" content="">
 </head>
 
-<body>
-    <div id="header">
-        <header>
-            <h1><a class="tittle-style" href="index.html?pag=home">SOLO<span>JUEGOS<span></a></h1>
-            <div id="menu-header" class="menu-header">
-                <a href="#">Login</a>
-                <a href="./sitemap.html">Mapa del sitio</a>
-            </div>
-            <div id="main-nav" class="menu-bar">
-                <div class="uno"></div>
-                <div class="dos"></div>
-                <div class="tres"></div>
-            </div>
-        </header>
-
-        <nav id="menu">
-            <ul id="menu-items">
-                <li><a href="./index.html">Inicio</a></li>
-                <li><a href="./news.html">Noticias</a></li>
-                <li><a href="./consoles.html">Consolas</a></li>
-                <li><a href="./genders.html">Géneros</a></li>
-                <li><a href="./sagas.html">Sagas</a></li>
-                <li><a href="./about.html">Acerca de</a></li>
-                <li class="menu-items-header"><a href="./login.html">Login</a></li>
-                <li class="menu-items-header"><a href="./sitemap.html">Mapa del sitio</a></li>
-            </ul>
-        </nav>
+<body style="background:#292828" id="loge">
+	<a class="anclaje" id="irregister"></a>
+	<a class="anclaje" id="irlogin"></a>
+	<div id="envoltura">
+    <h1><a class="titulo" href="index.html?pag=home">SOLO<span>JUEGOS</span></a></h1>
+    <div class="contlogin animate">
+        <form id="login"  action="login-php">
+            <h1 class="titulo">Login</h1>
+            <p>
+                <label>Usuario</label>
+                <input type="text" name="usernam" placeholder="Ingrese nombre de usuario">
+            </p>
+            <p>
+               <label>Contraseña</label>
+               <input type="password" name="userpass" placeholder="Ingrese contraseña"> 
+            </p>
+            <p>
+               <input type="checkbox" name="nocerrar" value="nocerrar">
+               <label>No cerrar sesión</label>
+            </p>
+            <p>
+                <input type="submit" class="boton" value="Entrar">
+            </p>
+            <p>
+               ¿No eres miembro?
+                <a href="#irregister" class="link-registrarse">Registrarse</a>
+            </p>
+        </form>
     </div>
-
-    <div id="contenedor" class="contenedor">
-
+    <div class="contregister animate">
+        <form id="registro" action="registro.php">
+            <h1 class="titulo">Registrarse</h1>
+            <p>
+                <label>Correo</label>
+                <input type="email" name="email" placeholder="micorreo@correo">
+            </p>
+            <p>
+                <label>Usuario</label>
+                <input type="text" name="usernam" placeholder="Nombre de usuario">
+            </p>
+            <p>
+               <label>Contraseña</label>
+               <input type="password" name="userpass" placeholder="Ingrese contraseña"> 
+            </p>
+            <p>
+               <label>Confirmar contraseña</label>
+               <input type="password" name="confirmuserpass" placeholder="Ingrese contraseña"> 
+            </p>
+            <p>
+                <input type="submit" class="boton" value="Registrar">
+            </p>
+            <p>
+               ¿Ya eres miembro?
+                <a href="#irlogin" class="link-entrar">Entrar</a>
+            </p>
+        </form>
     </div>
-
-    <div id="footer">
-        <footer>
-            <section class="final-last-footer">
-                <div class="footer-child social">
-                    <h3 class="tittle-style">Solo<span>Juegos</span></h3>
-                    <p>Aenean sodales eros ac scelerisque sagittis. Aliquam porta consectetur blandit. Nulla sed augue nisl. Vivamus pulvinar ullamc orper malesuada.</p>
-                    <p>Suspendisse ornare velit eget dolor fringilla, et imperdiet ipsum convallis. Integer faucibus, felis nec lobortis hendrerit, augue mi mattis massa, vitae lobortis neque nunc ut eros. Donec massa lectus</p>
-                </div>
-                <div class="footer-child contacto">
-                    <h3 class="footer-tittle-entry">ÚLTIMOS ARTÍCULOS</h3>
-                    <section class="last-articles">
-                        <img class="last-image-preview" src="img/news/starwars.jpeg" alt="" />
-                        <a href="#">Ya está disponible la actualización gratuita de marzo de Star Wars: Battlefront</a>
-                    </section class="last-articles">
-                    <section class="last-articles">
-                        <img class="last-image-preview" src="img/news/lionhead.jpg" alt="" />
-                        <a href="#">Microsoft cancela Fable Legends y negocia el cierre de Lionhead Studios</a>
-                    </section>
-                    <section class="last-articles">
-                        <img class="last-image-preview" src="img/consoles/nostalgic.jpg" alt="" />
-                        <a href="#">Ediciones de consolas solo para nostálgicos</a>
-                    </section>
-                </div>
-                <div class="footer-child gallery">
-                    <h3 class="footer-tittle-entry">ÚLTIMAS IMÁGENES</h3>
-                    <section class="last-images">
-                        <div class="gallery-row">
-                            <img src="img/zelda.jpg" alt="">
-                            <img src="img/EURO.jpg" alt="">
-                            <img src="img/sf.jpg" alt="">
-                        </div>
-                        <div class="gallery-row">
-                            <img src="img/consoles/mg.jpg" alt="">
-                            <img src="img/news/starwars.jpeg" alt="">
-                            <img src="img/consoles/nostalgic.jpg" alt="">
-                        </div>
-                    </section>
-                </div>
-            </section>
-            <div class="footer-legal">
-                <p>Copyright (c) 2016 Copyright Holder All Rights Reserved.</p>
-                <ul class="legal-social">
-                    <li><a href="#"><i class="icon-facebook"></i></a></li>
-                    <li><a href="#"><i class="icon-twitter"></i></a></li>
-                    <li><a href="#"><i class="icon-google-plus"></i></a></li>
-                    <li><a href="#"><i class="icon-youtube-play"></i></a></li>
-                    <li><a href="https://github.com/TheLoneGunmen" target="_blank"><i class="icon-github"></i></a></li>
-                </ul>
-            </div>
-        </footer>
-    </div>
-    <div class="social-bar">
-        <ul>
-            <li><a href="#" class="icon-facebook"></a></li>
-            <li><a href="#" class="icon-twitter"></a></li>
-            <li><a href="#" class="icon-google-plus"></a></li>
-            <li><a href="#" class="icon-rss"></a></li>
-            <li><a href="#" class="icon-youtube-play"></a></li>
-            <li><a href="https://github.com/TheLoneGunmen" target="_blank" class="icon-github"></a></li>
-        </ul>
-    </div>
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.2/jquery.min.js"></script>
-    <script src="js/main.js"></script>
+	</div>
 </body>
 
 </html>

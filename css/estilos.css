@@ -794,3 +794,92 @@ input.btn {
 .disabled {
     cursor: not-allowed;
 }
+
+/* Login y registrarse */
+.titulo {
+    color: #fff;
+    font-family: 'joystixmonospace';
+}
+.titulo span {
+    color: #66cc33;
+}
+
+.contlogin,
+.contregister{
+	position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    padding: 18px 6% 60px 6%;
+	margin: 0 0 35px 0;
+	background: #292828;
+	box-shadow:	
+		0px 0px 20px 15px #66cc33,	
+		0px 0px 8px 5px rgba(208, 223, 226, 0.4) inset;
+	border-radius: 5px;
+}
+.contlogin{
+	z-index: 22;
+}
+/* Animación login y regitrarse */
+.contregister{
+	z-index: 21;
+	opacity: 0;
+}
+
+#irregister:target ~ #envoltura .contregister,
+#irlogin:target ~ #envoltura .contlogin{
+	z-index: 22;
+	animation-name: fadeIn;
+	animation-delay: .1s;
+}
+
+.animate{
+	animation-duration: 0.5s;
+	animation-timing-function: ease;
+	animation-fill-mode: both;
+}
+
+@keyframes fadeIn {
+	0% {
+		opacity: 0;
+		transform: translateX(-20px);
+	}
+	
+	100% {
+		opacity: 1;
+		transform: translateX(0);
+	}
+}
+
+#irregister:target ~ #envoltura .contlogin,
+#irlogin:target ~ #envoltura .contregister{
+	animation-name: fadeOut;
+}
+
+@keyframes fadeOut {
+	0% {
+		opacity: 1;
+		transform: translateX(0);
+	}
+	
+	100% {
+		opacity: 0;
+		transform: translateX(-20px);
+	}
+}
+
+/* Etilos login y registrarse */
+.boton{
+	width: 40%;	
+	background: #66cc33;
+	padding: 8px 15px;
+	color: #fff;	
+	border: 1px solid #66cc33;	
+	border-radius: 5px;
+}
+.boton:hover{
+	background: #5BB32E;
+	border: 1px solid #5BB32E;
+	transition: all 0.2s linear;
+}

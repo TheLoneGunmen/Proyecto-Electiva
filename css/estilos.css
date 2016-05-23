@@ -795,13 +795,26 @@ input.btn {
     cursor: not-allowed;
 }
 
-/* Login y registrarse */
+/*  Estilos generales Login y registrarse */
+p{
+	margin-top: 10px
+}
+
+.link-registrarse, .link-entrar{
+	color: #66cc33
+}
+
 .titulo {
     color: #fff;
     font-family: 'joystixmonospace';
 }
 .titulo span {
     color: #66cc33;
+}
+
+#envoltura label{
+	color: white;
+	font-family: 'Aldrich', sans-serif;
 }
 
 .contlogin,
@@ -869,17 +882,48 @@ input.btn {
 	}
 }
 
-/* Etilos login y registrarse */
+/* Estilos titulos login y registro */
+h1{
+	padding: 2px 0 10px 0;
+	text-align: center;
+	padding-bottom: 30px
+}
+form h1:after{
+	content:' ';
+	display:block;
+	width:100%;
+	height:2px;
+	margin-top:10px;
+	background: linear-gradient(to left, rgb(41,40,40) 0%, rgb(102,204,51) 20%, rgb(102,204,51) 53%, rgb(102,204,51) 79%, rgb(41,40,40) 100%)
+}
+
+/* Estilos botones login y registros */
 .boton{
 	width: 40%;	
 	background: #66cc33;
 	padding: 8px 15px;
+	margin: 10px;
 	color: #fff;	
 	border: 1px solid #66cc33;	
 	border-radius: 5px;
+	font-family: 'joystixmonospace';
 }
 .boton:hover{
 	background: #5BB32E;
 	border: 1px solid #5BB32E;
 	transition: all 0.2s linear;
+}
+
+/* Estilos input login y registro */
+#envoltura [type="text"],
+[type="password"],
+[type="email"]{
+	width: 92%;
+	margin-top: 4px;
+	padding: 10px 5px 10px 32px;	
+	border: 1px;
+	box-sizing : content-box;
+	border-radius: 5px;
+	background: linear-gradient(to left, rgb(41,40,40) 0%, rgb(102,204,51) 20%, rgb(102,204,51) 53%, rgb(102,204,51) 79%, rgb(41,40,40) 100%);
+	font-family: 'joystixmonospace';
 }

@@ -11,6 +11,7 @@
     <link rel="stylesheet" href="./css/fontastic.css">
     <link rel="stylesheet" href="css/estilos.css">
 	<link rel="stylesheet" href="css/animate.css">
+	<link href='https://fonts.googleapis.com/css?family=Aldrich' rel='stylesheet' type='text/css'>
     <meta name="description" content="">
     <meta name="keywords" content="">
 </head>
@@ -31,16 +32,19 @@
                <label>Contraseña</label>
                <input type="password" name="userpass" placeholder="Ingrese contraseña"> 
             </p>
-            <p>
+            <p class="sesion">
                <input type="checkbox" name="nocerrar" value="nocerrar">
                <label>No cerrar sesión</label>
             </p>
             <p>
+				<center>
                 <input type="submit" class="boton" value="Entrar">
+				</center>
             </p>
             <p>
-               ¿No eres miembro?
-                <a href="#irregister" class="link-registrarse">Registrarse</a>
+               <label>¿No eres miembro?
+               <a href="#irregister" class="link-registrarse">Registrarse</a>
+			   </label>
             </p>
         </form>
     </div>
@@ -64,11 +68,14 @@
                <input type="password" name="confirmuserpass" placeholder="Ingrese contraseña"> 
             </p>
             <p>
+				<center>
                 <input type="submit" class="boton" value="Registrar">
+				</center>
             </p>
             <p>
-               ¿Ya eres miembro?
+                <label>¿Ya eres miembro?
                 <a href="#irlogin" class="link-entrar">Entrar</a>
+				</label>
             </p>
         </form>
     </div>

@@ -75,8 +75,4 @@
       $video.attr("src",enlace);
     });
   });
-
-
-
-
 })();

@@ -1,13 +1,6 @@
 /* Estilos generales */
 
-.menu-header, 
-.menu-bar,
-#menu,
-.contenedor,
-.contenido,
-#footer,
-.search-news,
-.social-bar{
+.menu-header, .menu-bar, #menu, .sidebar, #footer, .search-news, .social-bar {
     font-family: 'Aldrich', sans-serif;
 }
 * {
@@ -60,7 +53,7 @@ ul, ol {
 
 .tittle-style {
     color: #fff;
-    font-family: 'joystixmonospace';
+    font-family: 'joystixmonospace', 'Aldrich', sans-serif;
 }
 .tittle-style span {
     color: #66cc33;
@@ -72,8 +65,17 @@ ul, ol {
     margin: 20px auto 20px auto;
     border-bottom: 4px solid #000;
 }
-
-.sitemap-link{
+article h2 {
+    font-family: 'Aldrich', sans-serif;
+}
+article p {
+    font-family: Helvetica, Arial;
+    text-align: justify;
+}
+article div {
+    font-family: Helvetica, Arial;
+}
+.sitemap-link {
     color: #66cc33
 }
 
@@ -81,26 +83,18 @@ ul, ol {
 
 header {
     width: 100%;
-    padding: 5px;
+    padding: 20px;
     background: #292828;
     border-bottom: 5px solid #66cc33;
+    z-index: 3000;
     /* FlEXBOX */
-    display: -webkit-flex;
-    display: -ms-flexbox;
     display: flex;
-    -webkit-justify-content: space-between;
-    -ms-flex-pack: justify;
     justify-content: space-between;
-    -webkit-align-items: center;
-    -ms-flex-align: center;
     align-items: center;
 }
 #header {
     position: fixed;
     width: 100%;
-    z-index: 3000;
-}
-header {
     z-index: 3000;
 }
 header .menu-header a {
@@ -195,10 +189,10 @@ nav ul li a:hover {
         left: -100%;
     }
 }
-
-.menu-items-header{
-  display: none;
+.menu-items-header {
+    display: none;
 }
+
 /* Estilos envoltorio principal (Envuelve las etiquetas nav, section y aside) */
 
 .contenedor {
@@ -262,6 +256,7 @@ nav ul li a:hover {
 .console {
     padding: 10px;
     border-right: 1px solid #E0E0E0;
+    flex-grow: 1;
 }
 .console:last-child {
     border-right: none;
@@ -397,6 +392,10 @@ nav ul li a:hover {
     margin: 20px 0;
     border-bottom: 1px solid #E0E0E0;
 }
+.article-news h2 {
+    text-align: center;
+    font-size: 1.8rem;
+}
 .article-news img {
     display: block;
     max-width: 90%;
@@ -487,7 +486,7 @@ aside {
 .users-fans-social {
     padding: 15px;
     width: 50%;
-    font-size: 1.2rem;
+    font-size: 1.1rem;
     display: block;
     color: #fff;
 }
@@ -601,6 +600,140 @@ footer {
     background-color: #66cc33;
 }
 
+/*  Estilos generales Login y registrarse */
+
+#envoltura p {
+    margin-top: 10px;
+}
+.link-registrarse, .link-entrar {
+    color: #66cc33;
+}
+#envoltura label {
+    color: white;
+    font-family: 'Aldrich', sans-serif;
+}
+.contlogin, .contregister {
+    width: 40%;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    padding: 18px 50px 60px 50px;
+    background: #292828;
+    box-shadow: 0px 0px 20px 15px #66cc33, 0px 0px 8px 5px rgba(208, 223, 226, 0.4) inset;
+    border-radius: 5px;
+}
+
+.contlogin {
+    z-index: 22;
+}
+
+/* Animación login y regitrarse */
+
+.contregister {
+    z-index: 21;
+    opacity: 0;
+}
+#irregister:target ~ #envoltura .contregister, #irlogin:target ~ #envoltura .contlogin {
+    z-index: 22;
+    animation-name: fadeIn;
+    animation-delay: .1s;
+}
+.animate {
+    animation-duration: 0.5s;
+    animation-timing-function: ease;
+    animation-fill-mode: both;
+}
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+        transform: translateX(-20px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+#irregister:target ~ #envoltura .contlogin, #irlogin:target ~ #envoltura .contregister {
+    animation-name: fadeOut;
+}
+@keyframes fadeOut {
+    0% {
+        opacity: 1;
+        transform: translateX(0);
+    }
+    100% {
+        opacity: 0;
+        transform: translateX(-20px);
+    }
+}
+
+/* Estilos titulos login y registro */
+
+#envoltura h1 {
+    padding: 2px 0 10px 0;
+    text-align: center;
+    padding-bottom: 30px;
+}
+form h1:after {
+    content: ' ';
+    display: block;
+    width: 100%;
+    height: 2px;
+    margin-top: 10px;
+    background: linear-gradient(to left, rgb(41, 40, 40) 0%, rgb(102, 204, 51) 20%, rgb(102, 204, 51) 53%, rgb(102, 204, 51) 79%, rgb(41, 40, 40) 100%);
+}
+
+/* Estilos botones login y registros */
+
+.boton {
+    display: block;
+    width: 120px;
+    background: #66cc33;
+    padding: 8px 15px;
+    margin: 10px auto;
+    color: #fff;
+    border: 1px solid #66cc33;
+    border-radius: 5px;
+    font-family: 'joystixmonospace';
+    cursor: pointer;
+}
+.boton:hover {
+    background: #5BB32E;
+    border: 1px solid #5BB32E;
+    transition: all 0.2s linear;
+}
+
+/* Estilos input login y registro */
+
+#envoltura .login-input {
+    width: 92%;
+    margin-top: 4px;
+    padding: 10px 5px 10px 32px;
+    border: 1px;
+    box-sizing: content-box;
+    border-radius: 5px;
+    background: linear-gradient(to left, rgb(41, 40, 40) 0%, rgb(102, 204, 51) 20%, rgb(102, 204, 51) 53%, rgb(102, 204, 51) 79%, rgb(41, 40, 40) 100%);
+    font-family: 'Aldrich',sans-serif;
+    font-size: 1rem;
+    color: #fff;
+}
+#envoltura .login-input-warning{
+  background: linear-gradient(to left, rgb(41, 40, 40) 0%, rgb(212, 63, 58) 20%, rgb(212, 63, 58) 53%, rgb(212, 63, 58) 79%, rgb(41, 40, 40) 100%);
+}
+#envoltura .login-input::-webkit-input-placeholder {
+    color: #fff;
+}
+#envoltura .login-input:-moz-placeholder {
+    color: #fff;
+}
+#envoltura .login-input::-moz-input-placeholder {
+    color: #fff;
+}
+#envoltura .login-input::-ms-input-placeholder {
+    color: #fff;
+}
+
 /* Responsive design */
 
 @media screen and (max-width: 1000px) {
@@ -620,6 +753,9 @@ footer {
     }
     .sidebar {
         display: none;
+    }
+    .contlogin, .contregister {
+        width: 60%;
     }
 }
 @media screen and (max-width: 720px) {
@@ -655,8 +791,8 @@ footer {
         overflow: scroll;
         height: calc(100% - 70px);
     }
-    .menu-items-header{
-      display: block;
+    .menu-items-header {
+        display: block;
     }
     .consoles .interno img {
         float: none;
@@ -707,6 +843,16 @@ footer {
     #video-slider {
         width: 100%;
     }
+    .contlogin, .contregister {
+        width: 60%;
+        padding: 30px;
+    }
+    .contlogin{
+      margin-top: 30px;
+    }
+    .contregister{
+      margin-top: 70px;
+    }
 }
 @media screen and (max-width: 600px) {
     .article-entry {
@@ -720,6 +866,12 @@ footer {
     }
     .texbox {
         text-align: center;
+    }
+    .contlogin, .contregister {
+        width: 90%;
+    }
+    .register-login {
+        font-size: 1.5rem;
     }
 }
 @media screen and (max-width: 400px) {
@@ -807,137 +959,4 @@ input.btn {
 }
 .disabled {
     cursor: not-allowed;
-}
-
-/*  Estilos generales Login y registrarse */
-p{
-	margin-top: 10px
-}
-
-.link-registrarse, .link-entrar{
-	color: #66cc33
-}
-
-.titulo {
-    color: #fff;
-    font-family: 'joystixmonospace';
-}
-.titulo span {
-    color: #66cc33;
-}
-
-#envoltura label{
-	color: white;
-	font-family: 'Aldrich', sans-serif;
-}
-
-.contlogin,
-.contregister{
-	position: absolute;
-    left: 50%;
-    top: 50%;
-    transform: translate(-50%, -50%);
-    padding: 18px 6% 60px 6%;
-	margin: 0 0 35px 0;
-	background: #292828;
-	box-shadow:	
-		0px 0px 20px 15px #66cc33,	
-		0px 0px 8px 5px rgba(208, 223, 226, 0.4) inset;
-	border-radius: 5px;
-}
-.contlogin{
-	z-index: 22;
-}
-/* Animación login y regitrarse */
-.contregister{
-	z-index: 21;
-	opacity: 0;
-}
-
-#irregister:target ~ #envoltura .contregister,
-#irlogin:target ~ #envoltura .contlogin{
-	z-index: 22;
-	animation-name: fadeIn;
-	animation-delay: .1s;
-}
-
-.animate{
-	animation-duration: 0.5s;
-	animation-timing-function: ease;
-	animation-fill-mode: both;
-}
-
-@keyframes fadeIn {
-	0% {
-		opacity: 0;
-		transform: translateX(-20px);
-	}
-	
-	100% {
-		opacity: 1;
-		transform: translateX(0);
-	}
-}
-
-#irregister:target ~ #envoltura .contlogin,
-#irlogin:target ~ #envoltura .contregister{
-	animation-name: fadeOut;
-}
-
-@keyframes fadeOut {
-	0% {
-		opacity: 1;
-		transform: translateX(0);
-	}
-	
-	100% {
-		opacity: 0;
-		transform: translateX(-20px);
-	}
-}
-
-/* Estilos titulos login y registro */
-h1{
-	padding: 2px 0 10px 0;
-	text-align: center;
-	padding-bottom: 30px
-}
-form h1:after{
-	content:' ';
-	display:block;
-	width:100%;
-	height:2px;
-	margin-top:10px;
-	background: linear-gradient(to left, rgb(41,40,40) 0%, rgb(102,204,51) 20%, rgb(102,204,51) 53%, rgb(102,204,51) 79%, rgb(41,40,40) 100%)
-}
-
-/* Estilos botones login y registros */
-.boton{
-	width: 40%;	
-	background: #66cc33;
-	padding: 8px 15px;
-	margin: 10px;
-	color: #fff;	
-	border: 1px solid #66cc33;	
-	border-radius: 5px;
-	font-family: 'joystixmonospace';
-}
-.boton:hover{
-	background: #5BB32E;
-	border: 1px solid #5BB32E;
-	transition: all 0.2s linear;
-}
-
-/* Estilos input login y registro */
-#envoltura [type="text"],
-[type="password"],
-[type="email"]{
-	width: 92%;
-	margin-top: 4px;
-	padding: 10px 5px 10px 32px;	
-	border: 1px;
-	box-sizing : content-box;
-	border-radius: 5px;
-	background: linear-gradient(to left, rgb(41,40,40) 0%, rgb(102,204,51) 20%, rgb(102,204,51) 53%, rgb(102,204,51) 79%, rgb(41,40,40) 100%);
-	font-family: 'joystixmonospace';
 }

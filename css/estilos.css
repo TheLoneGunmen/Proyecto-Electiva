@@ -733,6 +733,11 @@ form h1:after {
 #envoltura .login-input::-ms-input-placeholder {
     color: #fff;
 }
+.div-error{
+  margin-top: 5px;
+  color: rgb(212, 63, 58);
+  display: none;
+}
 
 /* Responsive design */
 
